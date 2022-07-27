@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Data Cards</title>
+</head>
+<body>
+    <head>
+        <h1>Data Cards</h1>
+        <p>REST API netrunner.db</p>
+    </head>
+    
+    <main>
+        <p>TODO: change selects to checkboxes</p>
+        <section class="filters">
+            <label for="filter-identity">Filters</label>
+            <select name="filter_identity" id="filter_identity">
+                <option value="" selected>Choose Side</option>
+                <option value="0">Both</option>
+                <option value="1">Runners</option>
+                <option value="2">Corp</option>
+            </select>
+            <select name="filter_set" id="filter_set">
+                <option value="" selected>Choose Set</option>
+                <option value="0">Both</option>
+                <option value="1">Gateway</option>
+                <option value="2">System Update 21</option>
+            </select>
+
+            <a id="clearFilters">Clean Filters</a>
+        </section>
+
+        <div class="results"></div>
+
+    </main>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
